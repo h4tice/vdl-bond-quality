@@ -1,0 +1,5 @@
+method,kappa_vs_proxy_tree,kappa_vs_labels
+2D-CNN,0.479 ± 0.078,0.731 ± 0.118
+AttentionNet,0.555 ± 0.039,0.741 ± 0.089
+Bi-LSTM,0.509 ± 0.055,0.770 ± 0.108
+ResNet1D,0.510 ± 0.070,0.731 ± 0.061

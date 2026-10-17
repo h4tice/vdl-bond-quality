@@ -1,0 +1,24 @@
+| variant                           |   mean_diff_vs_attention_ce_raw |   seeds_better |      p |
+|:----------------------------------|--------------------------------:|---------------:|-------:|
+| resnet1d_ce | tuned               |                          0.0065 |              2 | 1      |
+| lstm_ce | raw                     |                         -0.0065 |              3 | 0.8125 |
+| resnet1d_ce | raw                 |                         -0.0075 |              2 | 1      |
+| ensemble: 4 original models (CE)  |                         -0.0105 |              1 | 0.1875 |
+| lstm_focal | raw                  |                         -0.015  |              2 | 1      |
+| lstm_focal | tuned                |                         -0.0154 |              1 | 0.4375 |
+| cnn_focal | raw                   |                         -0.0169 |              1 | 0.4375 |
+| lstm_ce | tuned                   |                         -0.0181 |              2 | 0.625  |
+| attention_pe_ce | tuned           |                         -0.0239 |              1 | 0.3125 |
+| resnet1d_focal | tuned            |                         -0.025  |              2 | 0.3125 |
+| ensemble: all configurations      |                         -0.0251 |              0 | 0.0625 |
+| attention_ce | tuned              |                         -0.0255 |              1 | 0.125  |
+| attention_pe_focal | raw          |                         -0.0267 |              1 | 0.125  |
+| attention_focal | raw             |                         -0.0279 |              1 | 0.1875 |
+| cnn_ce | raw                      |                         -0.0297 |              1 | 0.3125 |
+| attention_pe_ce | raw             |                         -0.0319 |              0 | 0.0625 |
+| resnet1d_focal | raw              |                         -0.0333 |              1 | 0.3125 |
+| validation-selected configuration |                         -0.0369 |              1 | 0.125  |
+| attention_pe_focal | tuned        |                         -0.044  |              1 | 0.1875 |
+| cnn_focal | tuned                 |                         -0.0451 |              0 | 0.0625 |
+| cnn_ce | tuned                    |                         -0.0487 |              0 | 0.0625 |
+| attention_focal | tuned           |                         -0.0562 |              1 | 0.125  |

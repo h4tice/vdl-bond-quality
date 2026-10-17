@@ -1,0 +1,8 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+data/raw/**/*.dlis
+data/processed/
+outputs/
+*.docx

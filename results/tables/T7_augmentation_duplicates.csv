@@ -1,0 +1,6 @@
+fold,n_partial_original,n_partial_independent_zones,n_partial_synthetic,synthetic_per_original,nn_corr_original_original,nn_corr_synthetic_original,frac_synthetic_corr_gt_0.95
+0,18,10,482,26.778,0.833,0.64,0.409
+1,58,17,522,9.0,0.849,0.744,0.393
+2,12,8,488,40.667,0.791,0.756,0.449
+3,27,15,473,17.519,0.827,0.722,0.389
+4,61,16,549,9.0,0.848,0.774,0.444
