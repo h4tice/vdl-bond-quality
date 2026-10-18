@@ -56,8 +56,12 @@ Pooled out-of-fold metrics, purged blocked CV, mean ± std over 5 seeds (`result
 - Leaky splits (random, stratified-depth) give macro-F1 of 0.70–0.83 for the same models.
 - In the external well, augmented networks recall 88–97 % of the Poor windows, compared with
   55–77 % for the classical baselines.
+- Binary task (Good vs. Not-Good = Partial + Poor, same folds and seeds,
+  `results/tables/T10_binary.md`): networks reach macro-F1 0.86–0.94, but the two-scalar
+  CBL-proxy tree reaches 0.918 and no network is significantly better; 86–100 % of the true
+  Partial windows are predicted as Good.
 
-All tables (T1–T9) and figures are in `results/`.
+All tables (T1–T10) and figures are in `results/`.
 
 ## Data
 
@@ -85,8 +89,10 @@ python scripts/rev2_run_cv.py --protocols blocked random stratdepth
 python scripts/rev2_run_cv.py --protocols lc --seeds 42 123 456  # learning curve
 python scripts/rev2_run_crosswell.py                             # 78B-32 -> 16B(78)-32
 python scripts/rev2_run_improve.py                               # focal loss, positional encoding
+python scripts/rev2_run_binary.py                                # Good vs. Not-Good
 python scripts/rev2_analysis.py                                  # -> outputs/revision2/{tables,figures}
 python scripts/rev2_improve_analysis.py
+python scripts/rev2_binary_analysis.py
 ```
 
 Each run is saved to its own file under `outputs/revision2/runs/`, so an interrupted run
